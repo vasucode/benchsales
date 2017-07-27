@@ -13,14 +13,18 @@
  *= require_tree .
  *= require_self
  */
-
+// Twitter Bootstrap Style
 @import 'bootstrap-sprockets';
 @import 'bootstrap';
+
+//Font Awsome Icon
+@import "font-awesome-sprockets";
+@import "font-awesome";
+
 
 h1, h2, h3 {
   font-family: 'Raleway', sans-serif;
   color: white;
-  font-weight: bold;
 }
 
 h1 {
@@ -35,17 +39,12 @@ body, .navbar {
 .navbar {
   border: none;
 }
-.navbar-default .navbar-brand {
-  color: white;
-}
+.navbar-default .navbar-brand,
 .navbar-default .navbar-nav > li > a {
   color: white;
-}
-.navbar-default .navbar-brand:hover {
-  color: white;
-  opacity: 0.75;
-}
-.navbar-default .navbar-nav > li > a:hover {
-  color: white;
-  opacity: 0.75;
+  &:hover {
+    color: white;
+    opacity: 0.75;
+  }
+
 }
