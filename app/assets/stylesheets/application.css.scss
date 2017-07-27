@@ -22,9 +22,15 @@
 @import "font-awesome";
 
 
-h1, h2, h3 {
+h1, h2, h3, p {
   font-family: 'Raleway', sans-serif;
   color: white;
+}
+
+// Style for brand name on the Nav bar
+.navbar-brand {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 800;
 }
 
 h1 {
@@ -47,4 +53,14 @@ body, .navbar {
     opacity: 0.75;
   }
 
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: white;
+}
+.navbar-default .navbar-toggle {
+  border: 2px solid white;
+  &:hover, &:focus {
+    background-color: #00c6ff;
+  }
 }
