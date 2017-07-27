@@ -18,14 +18,16 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a href="/" class="navbar-brand"><i class="fa fa-group"></i> Bench Sales</a>
+          <%= link_to "/", class: "navbar-brand" do %>
+              <i class="fa fa-group"></i>
+              DevSkill
+          <% end %>
         </div>
         <div class="collapse navbar-collapse" id="main-nav-collapse">
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="/"><i class="fa fa-home"></i>Home</a></li>
-            <li><a href="/about">About</a></li>
-            <li><a href="/contact">Contact</a></li>
-            <li><a href="/login">Login</a></li>
+            <li><%= link_to "About", "/about" %></li>
+            <li><%= link_to "Contact", "/contact" %></li>
+            <li><%= link_to "Signin", "/signin" %></li>
           </ul>
         </div><!-- /.navbar-collapse -->
       </div>
