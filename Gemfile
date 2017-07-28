@@ -36,6 +36,9 @@ gem 'bootstrap-sass', '3.3.7'
 #Font Awsome Gem File
 gem 'font-awesome-sass', '~> 4.7.0'
 
+# Use Hirb gem for better console data presentation
+gem 'hirb', '0.7.3'
+
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
