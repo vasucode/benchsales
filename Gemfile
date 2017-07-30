@@ -39,6 +39,9 @@ gem 'font-awesome-sass', '~> 4.7.0'
 # Use Hirb gem for better console data presentation
 gem 'hirb', '0.7.3'
 
+#JQuery gem
+gem 'jquery-rails'
+
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
