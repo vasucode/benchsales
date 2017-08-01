@@ -39,6 +39,20 @@ gem 'font-awesome-sass', '~> 4.7.0'
 # Use Hirb gem for better console data presentation
 gem 'hirb', '0.7.3'
 
+#User Auth
+gem 'devise'
+
+
+gem 'pundit'
+
+# gem 'Rspec', '3.6.0'
+
+gem 'Rubocop'
+
+# Use Rack CORS for handling Cross-Origin Resource Sharing (CORS), making cross-origin AJAX possible
+
+gem 'rack-cors'
+
 #JQuery gem
 gem 'jquery-rails'
 
@@ -56,6 +70,10 @@ end
 group :development do
   # Access an IRB console on exception pages or by using <%= console %> anywhere in the code.
   gem 'web-console', '>= 3.3.0'
+  gem 'listen', '>= 3.0.5', '< 3.2'
+  # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
+  gem 'spring'
+  gem 'spring-watcher-listen', '~> 2.0.0'
 end
 
 group :production do
