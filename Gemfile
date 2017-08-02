@@ -45,9 +45,9 @@ gem 'devise'
 
 gem 'pundit'
 
-# gem 'Rspec', '3.6.0'
-
-#gem 'Rubocop'
+gem 'rspec'
+#
+gem 'rubocop'
 
 # Use Rack CORS for handling Cross-Origin Resource Sharing (CORS), making cross-origin AJAX possible
 

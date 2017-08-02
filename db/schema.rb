@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170801200911) do
+ActiveRecord::Schema.define(version: 20170802001121) do
 
   create_table "contacts", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.string "name"
@@ -21,21 +21,21 @@ ActiveRecord::Schema.define(version: 20170801200911) do
   end
 
   create_table "hot_lists", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
-    t.string "First_Name"
-    t.string "Last_Name"
-    t.string "Resource_Title"
-    t.text "Resource_Summary"
-    t.string "Resource_Phone"
-    t.string "Resource_Email"
-    t.string "Years_Exp"
-    t.string "Main_Skill"
-    t.string "Resource_Trade"
-    t.string "Employment_Authorization"
-    t.string "Resource_Location"
-    t.text "Resource_Skill"
-    t.string "Relocation_Ok"
-    t.text "Resource_Resume"
-    t.string "Availability"
+    t.string "first_name"
+    t.string "last_name"
+    t.string "resource_title"
+    t.text "resource_summary"
+    t.string "resource_phone"
+    t.string "resource_email"
+    t.string "years_exp"
+    t.string "main_skill"
+    t.string "resource_trade"
+    t.string "employment_authorization"
+    t.string "resource_location"
+    t.text "other_skill"
+    t.string "relocation_ok"
+    t.text "resource_resume"
+    t.string "availability"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.bigint "user_id"
@@ -50,23 +50,23 @@ ActiveRecord::Schema.define(version: 20170801200911) do
   end
 
   create_table "job_posts", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
-    t.string "Job_Title"
-    t.string "Job_Location"
-    t.string "Job_Type"
-    t.string "Job_Rate"
-    t.string "Experience_Required"
-    t.string "Skills_Required"
-    t.string "Work_Auth"
-    t.date "Join_Date"
-    t.string "Duration"
-    t.boolean "Extendable"
-    t.string "Interview_Mode"
-    t.string "Required_Qualification"
-    t.string "Contact_Email"
-    t.string "Contact_Phone"
-    t.string "Resource_Location"
-    t.string "Availability"
-    t.string "Contract_Type"
+    t.string "job_title"
+    t.string "job_location"
+    t.string "job_type"
+    t.string "job_rate"
+    t.string "experience_required"
+    t.string "skills_required"
+    t.string "work_auth"
+    t.date "join_date"
+    t.string "duration"
+    t.boolean "extendable"
+    t.string "interview_mode"
+    t.string "required_qualification"
+    t.string "contact_email"
+    t.string "contact_phone"
+    t.string "resource_location"
+    t.string "availability"
+    t.string "contract_type"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.bigint "user_id"
@@ -75,16 +75,16 @@ ActiveRecord::Schema.define(version: 20170801200911) do
   end
 
   create_table "profiles", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
-    t.string "First_Name"
-    t.string "Last_Name"
-    t.string "Organization_Name"
-    t.string "Organization_Email"
-    t.string "Organization_Phone"
-    t.string "Organization_Address"
-    t.string "Organization_City"
-    t.string "Organization_Zip"
-    t.string "Organization_State"
-    t.string "Organization_Country"
+    t.string "first_name"
+    t.string "last_name"
+    t.string "organization_name"
+    t.string "organization_email"
+    t.string "organization_phone"
+    t.string "organization_address"
+    t.string "organization_city"
+    t.string "organization_zip"
+    t.string "organization_state"
+    t.string "organization_country"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.bigint "user_id"

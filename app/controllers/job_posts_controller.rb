@@ -23,7 +23,7 @@ class JobPostsController < ApplicationController
   private
 
   def jobpost_params
-    params.permit(:Job_Title, :Job_Location, :Job_Type, :Job_Rate, :Experience_Required, :Skills_Required, :Work_Auth, :Join_Date, :Duration, :Extendable , :Interview_Mode, :Required_Qualification, :Contact_Email, :Contact_Phone, :Resource_Location, :Availability, :Contract_Type, :user_id, :private_post, :job_description
+    params.permit(:job_title, :job_location, :job_type, :job_rate, :experience_required, :skills_required, :work_auth, :join_date, :duration, :extendable , :interview_mode, :required_qualification, :contact_email, :contact_phone, :resource_location, :availability, :contract_type, :user_id, :private_post, :job_description
     )
   end
 end

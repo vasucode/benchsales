@@ -11,7 +11,7 @@ class ProfilesController < ApplicationController
   end
 
   def create
-    @profiles = JobPost.new(profile_params)
+    @profiles = Profile.new(profile_params)
     if @profiles.save
       render json: @profiles
     else
@@ -23,7 +23,7 @@ class ProfilesController < ApplicationController
   private
 
   def profile_params
-    params.permit(:First_Name, :Last_Name, :Organization_Name, :Organization_Email, :Organization_Phone, :Organization_Address, :Organization_City, :Organization_Zip, :Organization_State, :Organization_Country, :user_id)
+    params.permit(:first_name, :last_name, :organization_name, :organization_email, :organization_phone, :organization_address, :organization_city, :organization_zip, :organization_state, :organization_country, :user_id)
   end
 end
 

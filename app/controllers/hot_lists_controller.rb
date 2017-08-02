@@ -4,7 +4,7 @@ class HotListsController < ApplicationController
 
   def index
     @hotlists = HotList.all
-    render json: @HotLists
+    render json: @hotlists
   end
 
   def show
@@ -22,6 +22,6 @@ class HotListsController < ApplicationController
   private
 
   def hotlist_params
-    params.permit(:First_Name, :Last_Name, :Resource_Title, :Resource_Summary, :Resource_Phone, :Resource_Email, :Years_Exp, :Main_Skill, :Resource_Trade, :Employment_Authorization, :Resource_Location, :Resource_Skill, :Relocation_Ok, :Resource_Resume, :Availability, :user_id, :resource_active)
+    params.permit(:first_name, :last_name, :resource_title, :resource_summary, :resource_phone, :resource_email, :years_exp, :main_skill, :resource_trade, :employment_authorization, :resource_location, :resource_skill, :relocation_ok, :resource_resume, :availability, :user_id, :resource_active)
   end
 end
